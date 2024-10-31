@@ -1,0 +1,241 @@
+body {
+    background-color: white;
+    color: rgb(85, 103, 156);
+    font-size: 17px;
+    font-family: "roman";
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1, h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 40px;
+    color: rgb(30, 42, 94)
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(30, 42, 94)
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #fb5703;
+}
+
+a:hover {
+    color: rgb(30, 42, 94);
+}
+
+
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: contain;
+}
+
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.section-box {
+
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > .section-box {
+    margin-bottom: 20px;
+}
+
+.section-box h2 {
+    margin: 0 0 10px 0;
+}
+
+
+.text-prescenter {
+    padding: 20px;
+    margin: 20px;
+}
+
+.intro-box {
+    border: none;
+    background-color: rgb(240, 230, 240);
+    padding: 20px 40px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section-follow {
+    background-color: rgb(85, 103, 156);
+}
+
+
+.box-white {
+    display: block;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius:50px;
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+    visibility: visible;
+    transition: background-color 0s;
+}
+
+.box-white:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+img {
+  max-width: 100%;
+}
+.slider-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 330px;
+  overflow: hidden;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+  background: #1c87c9;
+}
+.slide-input{
+  opacity: 0;
+}
+.slide-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+footer .section-box {
+    width: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    font-size: 2em;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-links li a:hover {
+    color: white;
+}
+
+
+
+@media (max-width: 960px) {
+    .intro-box {
+        width: 600px;
+    }
+}
+
+@media (max-width: 720px) {
+    .intro-box {
+        width: 400px;
+    }
+}
+
+@media (max-width: 540px) {
+    .intro-box {
+        width: 300px;
+    }
+}
